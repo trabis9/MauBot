@@ -2157,7 +2157,7 @@ if (isMedia && !sam.message.videoMessage || isQuotedImage) {
 const encmedia1 = isQuotedImage ? JSON.parse(JSON.stringify(sam).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : sam
 const dlfile1 = await samu330.downloadMediaMessage(encmedia1)
 const bas641 = `data:image/jpeg;base64,${dlfile1.toString('base64')}`
-var mantap1 = await convertSticker(bas641, `💎Samu330 | Sam y Perry🍒`, `🔮薩姆330 | Nyan 機器人🥀`)
+var mantap1 = await convertSticker(bas641, `MauModder`, `࿗ 「𝑀𝑎𝐺𝑦𝑐 ∯ 𝐶𝑜𝑚𝑝𝑎𝑛𝑦」 ࿘`)
 var st = new Buffer.from(mantap1, 'base64');
 samu330.sendMessage(from, st, sticker, {quoted: sam})
 } else if ((isMedia && sam.message.videoMessage.fileLength < 10000000 || isQuotedVideo && sam.message.extendedTextMessage.contextInfo.quotedMessage.videoMessage.fileLength < 10000000)) {
